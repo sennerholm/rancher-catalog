@@ -24,7 +24,7 @@ go-volume:
   volume_driver: ${volume_driver}
   entrypoint: /bin/true
   image: busybox
-gocd-agent:
+go-agent:
   image: gocd/gocd-agent:16.10.0
 #  links:
 #    - go-server

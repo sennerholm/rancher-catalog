@@ -31,7 +31,7 @@ go-agent:
   image: ashwanthkumar/gocd-agent:latest
   environment:
     - GO_SERVER=go-server
-    - DOCKER_GID_ON_HOST=1100
+    - DOCKER_GID_ON_HOST=1101
     - AGENT_KEY=123456789abcdef
     - AGENT_RESOURCES=docker,java8
   volumes:

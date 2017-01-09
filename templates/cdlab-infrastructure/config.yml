@@ -1,0 +1,8 @@
+name: cdlab-infrastructure
+description: |
+  Infrastructure for cdlab
+version: 1.0.1
+category: Infrastructure
+maintainer: "Mikael Sennerholm <mikael@sennerholm.net>"
+minimum_rancher_version: v1.3.0
+license: 

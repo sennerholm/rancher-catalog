@@ -47,7 +47,7 @@
       options:
         - local
         - convoy-gluster
-gocd-server:
+go-server:
   scale: 1
   retain_ip: true
   health_check:
@@ -57,5 +57,5 @@ gocd-server:
     request_line: GET /go/agents HTTP/1.0
     healthy_threshold: 2
     response_timeout: 5000
-gocd-agent:
-  scale: 1
+go-agent:
+  scale: 2

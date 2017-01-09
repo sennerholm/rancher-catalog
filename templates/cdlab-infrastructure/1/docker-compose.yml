@@ -13,7 +13,7 @@ go-server:
   labels:
     go.role: server
     io.rancher.container.hostname_override: container_name
-    io.rancher.sidekicks: gocd-volume
+    io.rancher.sidekicks: go-volume
 go-volume:
   net: none
   labels:
@@ -26,7 +26,7 @@ go-volume:
   image: busybox
 gocd-agent:
   image: gocd/gocd-agent:16.10.0
-  links:
-    - go-server
+#  links:
+#    - go-server
   labels:
     go.role: agent

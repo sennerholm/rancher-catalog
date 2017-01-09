@@ -30,8 +30,8 @@ go-agent:
 #    - go-server
   image: ashwanthkumar/gocd-agent:latest
   environment:
-    - GO_SERVER="go-server"
-    - DOCKER_GID_ON_HOST="1100"
+    - GO_SERVER=go-server
+    - DOCKER_GID_ON_HOST=1100
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - /usr/bin/docker:/usr/bin/docker

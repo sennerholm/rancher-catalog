@@ -1,4 +1,4 @@
-# CDlab Infrastructure (Experimental)
+# CDlab Infrastructure
 
 ### Info:
 

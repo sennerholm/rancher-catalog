@@ -1,0 +1,15 @@
+version: '2'
+services:
+  goagents:
+    image: ashwanthkumar/gocd-agent:latest
+    environment:
+      GO_SERVER: ${go_server}
+      AGENT_KEY: 123456789abcdef
+      AGENT_RESOURCES: {environment}
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+      go.role: agent
+      io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
+

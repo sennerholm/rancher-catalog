@@ -1,0 +1,23 @@
+.catalog:
+  name: gocd-agent
+  version: 16.12.0-rancher32
+  description: |
+    Gocd agents.
+  maintainer: "Mikael Sennerholm <mikael@Sennerholm.net>"
+  minimum_rancher_version: v0.59.0
+  uuid: cdlab-0
+  questions:
+    - variable: "go_server"
+      description: "IP of the Go server"
+      label: "ip"
+      required: true
+      type: "string"
+    - variable: "environment"
+      description: "The environment we add to"
+      label: "env"
+      required: true
+      type: "string"
+services:
+  goagents:
+    scale: 2
+    start_on_create: true

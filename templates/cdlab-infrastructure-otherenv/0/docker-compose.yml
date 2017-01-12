@@ -5,7 +5,7 @@ services:
     environment:
       GO_SERVER: ${go_server}
       AGENT_KEY: 123456789abcdef
-      AGENT_RESOURCES: {environment}
+      AGENT_RESOURCES: ${environment}
     stdin_open: true
     tty: true
     labels:

@@ -11,7 +11,7 @@
       description: "Url to download initial go config from (by curl)"
       label: "config url:"
       required: false
-      default: "https://github.com/sennerholm/doodleshop/blob/master/go-pipelineconf.xml"
+      default: "https://raw.githubusercontent.com/sennerholm/doodleshop/master/go-pipelineconf.xml"
       type: "string"
     - variable: public_port
       description: "public port to access the gocd server"

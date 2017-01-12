@@ -1,6 +1,6 @@
 .catalog:
   name: gocd-server
-  version: 16.12.0-rancher2
+  version: 16.12.0-rancher3
   description: |
     (Experimental) Gocd server.
   maintainer: "Mikael Sennerholm <mikael@Sennerholm.net>"
